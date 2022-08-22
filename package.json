@@ -35,6 +35,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@jonas_focke/svelcon": "^0.3.3"
+		"@jonas_focke/svelcon": "^0.3.3",
+		"wavesurfer.js": "^5.1.0"
 	}
 }

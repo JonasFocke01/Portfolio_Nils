@@ -36,6 +36,7 @@
 	"type": "module",
 	"dependencies": {
 		"@jonas_focke/svelcon": "^0.3.3",
+		"mailchimp": "^1.2.1",
 		"wavesurfer.js": "^5.1.0"
 	}
 }

@@ -9,13 +9,15 @@
 	let width: number;
 	let scrollY: number;
 
+	let progress = 0;
 	let audio: any;
 
 	let thisTrack: Track = {
 		title: '',
 		path: '',
 		level: 0,
-		playing: false
+		playing: false,
+		progress: 0
 	};
 
 	$: {
@@ -31,6 +33,26 @@
 	}
 
 	onMount(() => {
+		setInterval(() => {
+			if (audio) {
+				progress = audio.getCurrentTime();
+				thisTrack.progress = progress;
+				if (side === 'left') {
+					leftTrack.update((e) => {
+						e.progress = progress;
+						return e;
+					});
+				} else {
+					rightTrack.update((e) => {
+						e.progress = progress;
+						return e;
+					});
+				}
+			}
+		}, 50);
+	});
+
+	onMount(() => {
 		if (side === 'left') {
 			leftTrack.subscribe((e) => (thisTrack = e));
 		} else {
@@ -43,10 +65,10 @@
 			const waveSurfer = (await import('wavesurfer.js')).default;
 			audio = waveSurfer.create({
 				container: `#${thisTrack.title}`,
-				waveColor: '#bfa5a5',
-				backgroundColor: '#ffffff',
-				progressColor: '#b5273d',
-				barHeight: 2,
+				waveColor: '#ed5e93',
+				backgroundColor: '#000000',
+				progressColor: '#d3b8c2',
+				barHeight: 1,
 				vertical: true,
 				height: width / 6
 			});

@@ -6,15 +6,15 @@ module.exports = {
 	],
 	theme: {
 		colors: {
-			primary: '#007594',
-			secondary: '#574141',
-			surface: '#bfa5a5',
-			accent: '#b5273d',
+			primary: '#ed5e93',
+			secondary: '#fb4f93',
+			surface: '#bab7af',
+			accent: '#d3fbd8',
 			success: '#4dea3f',
 			warning: '#f4bb50',
 			error: '#f74838',
 			info: '#62acfc',
-			text: '#00abca',
+			text: '#ffffff',
 			black: '#000000'
 		},
 		plugins: []

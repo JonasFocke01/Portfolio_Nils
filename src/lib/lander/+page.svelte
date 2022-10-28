@@ -4,19 +4,23 @@
 
 <div class="w-full h-screen flex flex-row justify-center mainBackground">
 	<div class="h-screen flex flex-col justify-center">
-		<div class="text-7xl text-center">
+		<div class="text-7xl flex flex-col justify-center">
 			<Text text="*NILS FOCKE*" textColor="black" />
 		</div>
 		<div class="text-3xl w-full flex flex-row justify-center">
 			<Text text="*Professioneller EDM DJ*" textColor="black" />
 		</div>
 		<div class="w-full mt-4 flex flex-row space-x-10 justify-center">
-			<div class="m-4 w-full text-center bg-accent font-bold p-2 border rounded-md">
-				<a href="#Hörbeispiele">Hörbeispiele</a>
-			</div>
-			<div class="m-4 w-full text-center bg-accent font-bold p-2 border rounded-md">
-				<a href="#Kontakt">Buchen</a>
-			</div>
+			<a class="w-full" href="#audiosamples">
+				<div class="mt-4 w-full text-2xl text-center bg-accent font-bold p-2 border rounded-md">
+					Hörbeispiele
+				</div>
+			</a>
+			<a class="w-full" href="#contact">
+				<div class="mt-4 w-full text-2xl text-center bg-accent font-bold p-2 border rounded-md">
+					Buchen
+				</div>
+			</a>
 		</div>
 	</div>
 </div>

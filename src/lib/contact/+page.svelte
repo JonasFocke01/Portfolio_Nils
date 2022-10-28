@@ -9,7 +9,7 @@
 </script>
 
 <div class="w-full flex flex-col text-center">
-	<div id="Kontakt" />
+	<div id="contact" />
 	<p class="text-2xl">Du willst mich buchen?</p>
 	<InlineCalendar {theme} />
 </div>

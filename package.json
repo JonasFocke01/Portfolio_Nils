@@ -35,8 +35,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fortawesome/free-solid-svg-icons": "^6.2.0",
-		"@jonas_focke/svelcon": "^0.4.3",
-		"fontawesome-svelte": "^2.0.1"
+		"@jonas_focke/svelcon": "^0.4.3"
 	}
 }

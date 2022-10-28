@@ -3,7 +3,10 @@
 	import Text from '@jonas_focke/svelcon/Wrapper/Text.svelte';
 </script>
 
-<div id="audiosamples" class="w-full text-center flex flex-row justify-center space-x-10 pt-16">
+<div class="mt-16 w-full flex flex-row justify-center text-5xl">
+	<Text text="*Über mich*" />
+</div>
+<div id="audiosamples" class="w-full text-center flex flex-row justify-center space-x-10 pt-5">
 	<div class="w-1/4">
 		<Icon icon="emojione-monotone:optical-disk" height={70} width={70} />
 		<div class="mt-2">

@@ -12,7 +12,7 @@
 
 <div class="flex flex-col w-full justify-center text-5xl">
 	<div class="pt-10 flex flex-row justify-center">
-		<Text text="So sehen meine Auftritte aus" />
+		<Text text="*So sehen meine Auftritte aus*" />
 	</div>
 	<div class="mt-10 mb-28 flex flex-row">
 		<ImageCarousel {images} />

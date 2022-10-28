@@ -5,10 +5,10 @@
 <div class="w-full h-screen flex flex-row justify-center mainBackground">
 	<div class="h-screen flex flex-col justify-center">
 		<div class="text-7xl flex flex-col justify-center">
-			<Text text="*NILS FOCKE*" textColor="black" />
+			<Text text="*NILS FOCKE*" />
 		</div>
 		<div class="text-3xl w-full flex flex-row justify-center">
-			<Text text="*Professioneller EDM DJ*" textColor="black" />
+			<Text text="*Professioneller EDM DJ*" />
 		</div>
 		<div class="w-full mt-4 flex flex-row space-x-10 justify-center">
 			<a class="w-full" href="#audiosamples">

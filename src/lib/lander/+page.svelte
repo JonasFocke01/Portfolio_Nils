@@ -27,7 +27,7 @@
 
 <style>
 	.mainBackground {
-		background-image: url('dj_placeholder.jpg');
+		background-image: url('/gallery/dj_placeholder.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-size: 100% 100%;

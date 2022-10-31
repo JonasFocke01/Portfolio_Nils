@@ -12,13 +12,17 @@
 		</div>
 		<div class="w-full mt-4 flex flex-row space-x-10 justify-center">
 			<a class="w-full" href="#audiosamples">
-				<div class="mt-4 w-full text-2xl text-center bg-accent font-bold p-2 border rounded-md">
-					Hörbeispiele
+				<div
+					class="mt-4 w-full text-2xl flex flex-row justify-center bg-accent font-bold p-2 border rounded-md"
+				>
+					<Text text="*Hörbeispiele*" />
 				</div>
 			</a>
-			<a class="w-full" href="#contact">
-				<div class="mt-4 w-full text-2xl text-center bg-accent font-bold p-2 border rounded-md">
-					Buchen
+			<a class="w-full" href="/booking">
+				<div
+					class="mt-4 w-full text-2xl flex flex-row justify-center bg-accent font-bold p-2 border rounded-md"
+				>
+					<Text text="*Buchen*" />
 				</div>
 			</a>
 		</div>

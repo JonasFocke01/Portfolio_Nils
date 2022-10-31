@@ -7,7 +7,7 @@
 	<Text text="*Über mich*" />
 </div>
 <div id="audiosamples" class="w-full text-center flex flex-row justify-center space-x-10 pt-5">
-	<div class="w-1/4">
+	<div class="w-1/2">
 		<Icon icon="emojione-monotone:optical-disk" height={70} width={70} />
 		<div class="mt-2">
 			<Text text="*Über mich als DJ*" />
@@ -22,26 +22,6 @@
                 Spontane Songwünsche sind natürlich gar kein Problem!!
                 "
 				/>
-			</div>
-		</div>
-	</div>
-	<div class="w-1/4">
-		<Icon icon="akar-icons:location" height={70} width={70} />
-		<div class="mt-2">
-			<Text text="*Standort*" />
-			<div class="mt-2">
-				<Text
-					text="
-                100Km Fahrtweg um den Bereich Ottmarsbocholt. 
-                Inbegriffen ist z.B. das Münsterland und Dortmund. Bei längeren Strecken bitte einfach kontaktieren.
-                Hier wohne ich:
-                "
-				/>
-			</div>
-			<div class="flex flex-row justify-center w-full">
-				<a href="https://goo.gl/maps/NZSb25TiK5B92JaS7" target="_blank" rel="noreferrer">
-					<Icon icon="arcticons:maps" height={70} width={70} />
-				</a>
 			</div>
 		</div>
 	</div>

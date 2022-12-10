@@ -18,11 +18,9 @@
 					<Text text="*Hörbeispiele*" />
 				</div>
 			</a>
-			<a class="w-full" href="/booking">
-				<div
-					class="mt-4 w-full text-2xl flex flex-row justify-center bg-accent font-bold p-2 border rounded-md"
-				>
-					<Text text="*Buchen*" />
+			<a class="w-full" href="#contact">
+				<div class="mt-4 w-full text-2xl text-center bg-accent font-bold p-2 border rounded-md">
+					Kontakt
 				</div>
 			</a>
 		</div>

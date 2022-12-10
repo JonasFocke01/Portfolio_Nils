@@ -1,35 +1,40 @@
 <script lang="ts">
 	import { flip } from 'svelte/animate';
 
-	export let images: any;
+	export let medias: any;
 	export let imageWidth = 300;
 	export let imageSpacing = 20;
 	export let speed = 500;
 	export let controlColor = '#444';
 	export let controlScale = '0.5';
 
-	const rotateLeft = (e) => {
-		const transitioningImage = images[images.length - 1];
+	const rotateLeft = () => {
+		const transitioningImage = medias[medias.length - 1];
 		document.getElementById(transitioningImage.id).style.opacity = '0';
-		images = [images[images.length - 1], ...images.slice(0, images.length - 1)];
+		medias = [medias[medias.length - 1], ...medias.slice(0, medias.length - 1)];
 		setTimeout(() => (document.getElementById(transitioningImage.id).style.opacity = 1), speed);
 	};
 
-	const rotateRight = (e) => {
-		const transitioningImage = images[0];
+	const rotateRight = () => {
+		const transitioningImage = medias[0];
 		document.getElementById(transitioningImage.id).style.opacity = 0;
-		images = [...images.slice(1, images.length), images[0]];
+		medias = [...medias.slice(1, medias.length), medias[0]];
 		setTimeout(() => (document.getElementById(transitioningImage.id).style.opacity = 1), speed);
+	};
+
+	const openImage = (image) => {
+		window.open(image.path);
 	};
 </script>
 
 <div id="carousel-container">
 	<div id="carousel-images">
-		{#each images as image (image.id)}
+		{#each medias as media (media.id)}
 			<img
-				src={image.path}
-				alt={image.id}
-				id={image.id}
+				on:click={openImage(media)}
+				src={media.path}
+				alt={media.id}
+				id={media.id}
 				style={`width:${imageWidth}px; margin: 0 ${imageSpacing}px;`}
 				animate:flip={{ duration: speed }}
 			/>

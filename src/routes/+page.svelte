@@ -13,7 +13,7 @@
 		<div class="bg-secondary">
 			<About />
 		</div>
-		<div class="bg-secondary">
+		<div class="bg-black">
 			<Gallery />
 		</div>
 		<div class="bg-secondary">

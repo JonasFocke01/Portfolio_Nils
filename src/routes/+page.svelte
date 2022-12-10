@@ -6,17 +6,17 @@
 </script>
 
 <div class="w-full min-h-screen flex flex-row justify-center bg-primary scroll-smooth">
-	<div class="w-screen flex flex-col space-y-36">
+	<div class="w-screen flex flex-col space-y-3">
 		<div>
 			<Lander />
 		</div>
-		<div class="bg-surface">
+		<div class="bg-secondary">
 			<About />
 		</div>
-		<div class="bg-surface">
+		<div class="bg-secondary">
 			<Gallery />
 		</div>
-		<div class="bg-surface">
+		<div class="bg-secondary">
 			<Contact />
 		</div>
 	</div>

@@ -19,7 +19,7 @@
 					rel="noreferrer"
 				>
 					<div class="w-1/2 p-2">
-						<div class="w-full flex flex-row justify-center">
+						<div class="w-full flex flex-row justify-center text-surface">
 							<Icon icon="akar-icons:location" height={70} width={70} />
 						</div>
 						<div class="mt-2">
@@ -27,7 +27,7 @@
 							<div class="mt-2">
 								<Text text="48143 Münster" />
 							</div>
-							<div class="w-full mt-3">
+							<div class="w-full mt-3 text-surface">
 								<Icon icon="arcticons:maps" height={70} width={70} />
 							</div>
 						</div>
@@ -41,7 +41,7 @@
 							'mailto:info@nilsfocke.de?subject=Hallo Nils&body=Das möchten wir dir sagen:'
 						)}
 				>
-					<div class="w-full flex flex-row justify-center">
+					<div class="w-full flex flex-row justify-center text-surface">
 						<Icon icon="ic:baseline-mail-outline" height={70} width={70} />
 					</div>
 					<div class="mt-2 p-2">

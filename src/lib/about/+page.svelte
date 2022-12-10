@@ -7,7 +7,7 @@
 	<Text text="*Über mich*" />
 </div>
 <div id="audiosamples" class="w-full text-center flex flex-row justify-center space-x-10 pt-5">
-	<div class="w-1/2">
+	<div class="w-1/2 text-surface">
 		<Icon icon="emojione-monotone:optical-disk" height={70} width={70} />
 		<div class="mt-2">
 			<Text text="*Über mich als DJ*" />
@@ -27,7 +27,7 @@
 	</div>
 </div>
 <div class="w-full mt-10 text-center flex flex-row justify-center space-x-10 pb-16">
-	<div class="w-1/4">
+	<div class="w-1/4 text-surface">
 		<Icon icon="bi:music-note-beamed" height={70} width={70} />
 		<div class="mt-2">
 			<Text text="*Musikrichtungen...*" />
@@ -48,7 +48,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="w-1/4">
+	<div class="w-1/4 text-surface">
 		<Icon icon="bi:collection-play-fill" height={70} width={70} />
 		<div class="mt-2">
 			<Text text="*Hörbeispiele*" />

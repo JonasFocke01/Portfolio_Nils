@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Text from '@jonas_focke/svelcon/Wrapper/Text.svelte';
+	import { scrollTo } from 'svelte-scrolling';
 </script>
 
 <div class="w-full h-screen flex flex-row justify-center mainBackground">
@@ -11,20 +12,18 @@
 			<Text text="*Professioneller EDM DJ*" textColor="secondary" typewriterSpeed={0.3} />
 		</div>
 		<div class="w-full mt-4 flex flex-col lg:flex-row lg:space-x-10 justify-center">
-			<a class="w-full" href="#samples">
-				<div
-					class="mt-4 w-full text-2xl flex flex-row justify-center bg-secondary font-bold p-2 border rounded-md"
-				>
-					<Text text="*Hörbeispiele*" />
-				</div>
-			</a>
-			<a class="w-full" href="#contact">
-				<div
-					class="mt-4 w-full text-2xl flex flex-row justify-center bg-secondary font-bold p-2 border rounded-md"
-				>
-					<Text text="*Kontakt*" />
-				</div>
-			</a>
+			<div
+				use:scrollTo={'about'}
+				class="mt-4 w-full text-2xl flex flex-row justify-center bg-secondary font-bold p-2 border rounded-md"
+			>
+				<Text text="*Hörbeispiele*" />
+			</div>
+			<div
+				use:scrollTo={'contact'}
+				class="mt-4 w-full text-2xl flex flex-row justify-center bg-secondary font-bold p-2 border rounded-md"
+			>
+				<Text text="*Kontakt*" />
+			</div>
 		</div>
 	</div>
 </div>

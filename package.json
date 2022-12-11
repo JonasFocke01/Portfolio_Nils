@@ -36,6 +36,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@jonas_focke/svelcon": "^0.4.3"
+		"@jonas_focke/svelcon": "^0.4.3",
+		"svelte-scrolling": "^1.2.2"
 	}
 }

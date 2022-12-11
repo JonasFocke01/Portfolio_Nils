@@ -8,7 +8,7 @@
 
 <div class="w-full min-h-screen flex flex-row justify-center bg-primary scroll-smooth">
 	<div class="w-screen flex flex-col space-y-3">
-		<div use:scrollRef={'lander'}>
+		<div use:scrollRef={'lander'} class="bg-black">
 			<Lander />
 		</div>
 		<div use:scrollRef={'about'} class="bg-secondary">

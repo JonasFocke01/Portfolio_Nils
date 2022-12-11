@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
+	import { fly } from 'svelte/transition';
 	import Text from '@jonas_focke/svelcon/Wrapper/Text.svelte';
 </script>
 
@@ -7,8 +8,10 @@
 	<Text text="*Über mich*" />
 </div>
 <div id="audiosamples" class="w-full text-center flex flex-row justify-center space-x-10 pt-5">
-	<div class="w-1/2 text-surface">
-		<Icon icon="emojione-monotone:optical-disk" height={70} width={70} />
+	<div class="w-3/4 lg:w-1/2 text-surface">
+		<div class="w-full flex flex-row justify-center">
+			<Icon icon="emojione-monotone:optical-disk" height={70} width={70} />
+		</div>
 		<div class="mt-2">
 			<Text text="*Über mich als DJ*" />
 			<div class="mt-2">
@@ -26,43 +29,51 @@
 		</div>
 	</div>
 </div>
-<div class="w-full mt-10 text-center flex flex-row justify-center space-x-10 pb-16">
-	<div class="w-1/4 text-surface">
-		<Icon icon="bi:music-note-beamed" height={70} width={70} />
-		<div class="mt-2">
-			<Text text="*Musikrichtungen...*" />
-			<Text text="...bei denen ich mich zuhause fühle" />
-			<div class="mt-2">
-				<a href="https://www.youtube.com/watch?v=KB2iWaCuq0I" target="_blank" rel="noreferrer"
-					><Text text="_Bigroom_" textColor="accent" />
-				</a>
-				<a href="https://www.youtube.com/c/BassHouseMusic" target="_blank" rel="noreferrer"
-					><Text text="_Basshouse_" textColor="accent" />
-				</a>
-				<a href="https://www.youtube.com/watch?v=sXBDD8qtHI8" target="_blank" rel="noreferrer"
-					><Text text="_Hardstyle_" textColor="accent" />
-				</a>
-				<a href="https://www.youtube.com/watch?v=Pey5MZgoVAU" target="_blank" rel="noreferrer"
-					><Text text="_Rawstyle_" textColor="accent" />
-				</a>
+<div class="w-full mt-10 text-center flex flex-col lg:flex-row justify-center lg:space-x-10 pb-16">
+	<div class="lg:w-1/4 text-surface w-full flex flex-col justify-center">
+		<div class="w-full flex flex-row justify-center">
+			<Icon icon="bi:music-note-beamed" height={70} width={70} />
+		</div>
+		<div class="mt-2 w-full flex flex-row justify-center">
+			<div class="w-3/4">
+				<Text text="*Musikrichtungen...*" />
+				<Text text="...bei denen ich mich zuhause fühle" />
+				<div class="mt-2">
+					<a href="https://www.youtube.com/watch?v=KB2iWaCuq0I" target="_blank" rel="noreferrer"
+						><Text text="_Bigroom_" textColor="accent" />
+					</a>
+					<a href="https://www.youtube.com/c/BassHouseMusic" target="_blank" rel="noreferrer"
+						><Text text="_Basshouse_" textColor="accent" />
+					</a>
+					<a href="https://www.youtube.com/watch?v=sXBDD8qtHI8" target="_blank" rel="noreferrer"
+						><Text text="_Hardstyle_" textColor="accent" />
+					</a>
+					<a href="https://www.youtube.com/watch?v=Pey5MZgoVAU" target="_blank" rel="noreferrer"
+						><Text text="_Rawstyle_" textColor="accent" />
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="w-1/4 text-surface">
-		<Icon icon="bi:collection-play-fill" height={70} width={70} />
-		<div class="mt-2">
-			<Text text="*Hörbeispiele*" />
-			<div class="mt-2">
-				<Text
-					text="
-                Aufgrund von Copyright, kann ich eine Hörprobe nur auf eine kurze Anfrage versenden. 
-                Eine kurze Anfrage und Sie erhalten ein irgendwie langes DJ!-Set mit Video. 
-                Andernfalls bin ich dann und dann bei Twitch oder so.
-                "
-				/>
-				<a href="#contact">
-					<Text text="_Stell hier deine Set!-Anfrage_" textColor="accent" />
-				</a>
+	<div id="samples" class="mt-8 lg:mt-0 lg:w-1/4 w-full text-surface">
+		<div class="w-full flex flex-row justify-center">
+			<Icon icon="bi:collection-play-fill" height={70} width={70} />
+		</div>
+		<div class="w-full flex flex-row justify-center">
+			<div class="mt-2 lg:w-fitt w-3/4">
+				<Text text="*Hörbeispiele*" />
+				<div class="mt-2">
+					<Text
+						text="
+					Aufgrund von Copyright, kann ich eine Hörprobe nur auf eine kurze Anfrage versenden. 
+					Eine kurze Anfrage und Sie erhalten ein irgendwie langes DJ!-Set mit Video. 
+					Andernfalls bin ich dann und dann bei Twitch oder so.
+					"
+					/>
+					<a href="#contact">
+						<Text text="_Stell hier deine Set!-Anfrage_" textColor="accent" />
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>

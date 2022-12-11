@@ -31,7 +31,8 @@
 	<div id="carousel-images">
 		{#each medias as media (media.id)}
 			<img
-				on:click={openImage(media)}
+				class="cursor-pointer"
+				on:click={() => openImage(media)}
 				src={media.path}
 				alt={media.id}
 				id={media.id}

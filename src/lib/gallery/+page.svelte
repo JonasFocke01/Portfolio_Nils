@@ -25,7 +25,7 @@
 
 	let mounted = false;
 	let innerWidth = 0;
-	$: w = mounted && innerWidth < 1024 ? innerWidth : innerWidth / 2;
+	$: w = mounted && innerWidth < 1024 ? innerWidth : (innerWidth - 200) / 2;
 	onMount(() => {
 		mounted = true;
 	});

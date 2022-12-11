@@ -2,6 +2,7 @@
 	import Text from '@jonas_focke/svelcon/Wrapper/Text.svelte';
 	import MediaQuery from '@jonas_focke/svelcon/Wrapper/MediaQuery.svelte';
 	import ImageCarousel from '$lib/ImageCarousel/+page.svelte';
+	import { onMount } from 'svelte';
 
 	type Medium = { path: string; id: string };
 	type Media = Array<Medium>;
@@ -21,7 +22,16 @@
 	const openImage = (image: Medium) => {
 		window.open(image.path);
 	};
+
+	let mounted = false;
+	let innerWidth = 0;
+	$: w = mounted && innerWidth < 1024 ? innerWidth : innerWidth / 2;
+	onMount(() => {
+		mounted = true;
+	});
 </script>
+
+<svelte:window bind:innerWidth />
 
 <div class="flex flex-col w-full justify-center text-5xl">
 	<div class="pt-10 px-6 flex flex-row justify-center">
@@ -33,19 +43,16 @@
 		</MediaQuery>
 		<MediaQuery query="tablet">
 			{#each images as image}
-				<img
-					class="cursor-pointer"
-					on:click={() => openImage(image)}
-					src={image.path}
-					alt={image.id}
-				/>
+				<a href="/" on:click={() => openImage(image)}>
+					<img class="cursor-pointer" src={image.path} alt={image.id} />
+				</a>
 			{/each}
 		</MediaQuery>
 	</div>
 	<div class="flex flex-row justify-center w-full">
 		<div class="mt-10 mb-28 flex lg:flex-row flex-col justify-center lg:space-x-10">
 			{#each videos as video}
-				<iframe width="420" height="315" title="video" src={video.path} />
+				<iframe width={w} height={(w / 16) * 9} title="video" src={video.path} />
 			{/each}
 		</div>
 	</div>

@@ -3,9 +3,3 @@
 </script>
 
 <slot />
-
-<style>
-	* {
-		scroll-behavior: smooth;
-	}
-</style>

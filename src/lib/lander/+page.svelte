@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Text from '@jonas_focke/svelcon/Wrapper/Text.svelte';
-	import { scrollTo } from 'svelte-scrolling';
+	import { scrollTo, scrollBottom } from 'svelte-scrolling';
 </script>
 
 <div class="w-full h-screen flex flex-row justify-center mainBackground">
@@ -13,13 +13,13 @@
 		</div>
 		<div class="w-full mt-4 flex flex-col lg:flex-row lg:space-x-10 justify-center">
 			<div
-				use:scrollTo={'about'}
+				use:scrollTo={{ ref: 'about', offset: -window.innerHeight / 2, duration: 1000 }}
 				class="mt-4 w-full text-2xl flex flex-row justify-center bg-secondary font-bold p-2 border rounded-md"
 			>
 				<Text text="*Hörbeispiele*" />
 			</div>
 			<div
-				use:scrollTo={'contact'}
+				use:scrollTo={{ ref: 'contact', offset: -window.innerHeight * 0.8, duration: 1500 }}
 				class="mt-4 w-full text-2xl flex flex-row justify-center bg-secondary font-bold p-2 border rounded-md"
 			>
 				<Text text="*Kontakt*" />

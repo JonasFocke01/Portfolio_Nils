@@ -20,7 +20,7 @@
 					rel="noreferrer"
 				>
 					<div class="w-full lg:w-1/2 p-2">
-						<div class="w-full flex flex-row justify-center text-surface">
+						<div class="w-full flex flex-row justify-center text-text">
 							<Icon icon="akar-icons:location" height={70} width={70} />
 						</div>
 						<div class="flex flex-row justify-center">
@@ -41,7 +41,7 @@
 							'mailto:info@nilsfocke.de?subject=Hallo Nils&body=Das möchten wir dir sagen:'
 						)}
 				>
-					<div class="w-full lg:mt-0 mt-6 flex flex-row justify-center text-surface">
+					<div class="w-full lg:mt-0 mt-6 flex flex-row justify-center text-text">
 						<Icon icon="ic:baseline-mail-outline" height={70} width={70} />
 					</div>
 					<div class="flex flex-row justify-center">

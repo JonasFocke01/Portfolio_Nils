@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Text from '@jonas_focke/svelcon/Wrapper/Text.svelte';
-	import { scrollTo, scrollBottom } from 'svelte-scrolling';
+	import { scrollTo } from 'svelte-scrolling';
 </script>
 
 <div class="w-full h-screen flex flex-row justify-center mainBackground">
@@ -30,9 +30,8 @@
 
 <style>
 	.mainBackground {
-		background-image: url('/gallery/dj_placeholder.jpg');
-		background-repeat: no-repeat;
+		background-image: url('/Lander.jpg');
 		background-size: cover;
-		background-size: 100% 100%;
+		background-position: center;
 	}
 </style>

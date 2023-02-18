@@ -2,77 +2,43 @@
 	import Icon from '@iconify/svelte';
 	import { fly } from 'svelte/transition';
 	import Text from '@jonas_focke/svelcon/Wrapper/Text.svelte';
+	import { inview } from 'svelte-inview';
+
+	let isInView: boolean;
+	const options = {};
 </script>
 
 <div class="mt-16 w-full flex flex-row justify-center text-5xl">
-	<Text text="*Über mich*" />
-</div>
-<div id="audiosamples" class="w-full text-center flex flex-row justify-center space-x-10 pt-5">
-	<div class="w-3/4 lg:w-1/2 text-surface">
-		<div class="w-full flex flex-row justify-center">
-			<Icon icon="emojione-monotone:optical-disk" height={70} width={70} />
-		</div>
-		<div class="mt-2">
-			<Text text="*Über mich als DJ*" />
-			<div class="mt-2">
-				<Text
-					text="
-                Ich bin Professioneller blabla... 
-                Für Privatpartys, Clubs ...
-                Am liebsten bin ich natürlich in meinen Musikrichtungen unterwegs, 
-                jedoch kann ich gerne zeitweise auch ganz anderes spielen (z.B. Rock, Pop, Klassiker, Frenchcore...), 
-                nur gegen Schlager bin ich etwas allergisch, obwohl ein oder zwei auch kein Problem sind. 
-                Spontane Songwünsche sind natürlich gar kein Problem!!
-                "
-				/>
-			</div>
-		</div>
+	<Text text="*Das bin ich*" />
+	<div
+		class="flex flex-row justify-center transform duration-1000 ease-in-out text-text mt-2 h-[40px]"
+		use:inview={options}
+		on:enter={(event) => {
+			const { inView } = event.detail;
+			isInView = inView;
+		}}
+		class:rotate-180={isInView}
+		class:-rotate-180={!isInView}
+	>
+		<Icon icon="emojione-monotone:optical-disk" height={40} width={40} />
 	</div>
 </div>
-<div class="w-full mt-10 text-center flex flex-col lg:flex-row justify-center lg:space-x-10 pb-16">
-	<div class="lg:w-1/4 text-surface w-full flex flex-col justify-center">
-		<div class="w-full flex flex-row justify-center">
-			<Icon icon="bi:music-note-beamed" height={70} width={70} />
-		</div>
-		<div class="mt-2 w-full flex flex-row justify-center">
-			<div class="w-3/4">
-				<Text text="*Musikrichtungen...*" />
-				<Text text="...bei denen ich mich zuhause fühle" />
-				<div class="mt-2">
-					<a href="https://www.youtube.com/watch?v=KB2iWaCuq0I" target="_blank" rel="noreferrer"
-						><Text text="_Bigroom_" textColor="accent" />
-					</a>
-					<a href="https://www.youtube.com/c/BassHouseMusic" target="_blank" rel="noreferrer"
-						><Text text="_Basshouse_" textColor="accent" />
-					</a>
-					<a href="https://www.youtube.com/watch?v=sXBDD8qtHI8" target="_blank" rel="noreferrer"
-						><Text text="_Hardstyle_" textColor="accent" />
-					</a>
-					<a href="https://www.youtube.com/watch?v=Pey5MZgoVAU" target="_blank" rel="noreferrer"
-						><Text text="_Rawstyle_" textColor="accent" />
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="samples" class="mt-8 lg:mt-0 lg:w-1/4 w-full text-surface">
-		<div class="w-full flex flex-row justify-center">
-			<Icon icon="bi:collection-play-fill" height={70} width={70} />
-		</div>
-		<div class="w-full flex flex-row justify-center">
-			<div class="mt-2 lg:w-fitt w-3/4">
-				<Text text="*Hörbeispiele*" />
+<div
+	id="audiosamples"
+	class="w-full text-center flex flex-row justify-center space-x-10 pt-5 mb-16"
+>
+	<div class="w-3/4 lg:w-1/2 text-text">
+		<div class="mt-2 flex flex-row">
+			<img class="mr-20 object-scale-down" src="/Portrait.jpg" alt="Mein Portrait" />
+			<div class="mt-2 ml-4">
 				<div class="mt-2">
 					<Text
 						text="
-					Aufgrund von Copyright, kann ich eine Hörprobe nur auf eine kurze Anfrage versenden. 
-					Eine kurze Anfrage und Sie erhalten ein irgendwie langes DJ!-Set mit Video. 
-					Andernfalls bin ich dann und dann bei Twitch oder so.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor aliquam nulla facilisi cras. Magna fermentum iaculis eu non. A diam sollicitudin tempor id eu. Ac orci phasellus egestas tellus rutrum tellus pellentesque. At in tellus integer feugiat scelerisque varius. Blandit aliquam etiam erat velit scelerisque. Convallis posuere morbi leo urna molestie at elementum eu. Ipsum nunc aliquet bibendum enim. Ornare massa eget egestas purus viverra accumsan in nisl. Aliquam faucibus purus in massa tempor nec feugiat nisl. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Eget nulla facilisi etiam dignissim diam quis. Tempor nec feugiat nisl pretium fusce. Id cursus metus aliquam eleifend. Dui vivamus arcu felis bibendum ut tristique.
+
+Amet consectetur adipiscing elit ut aliquam purus. Augue interdum velit euismod in pellentesque massa. Elit ullamcorper dignissim cras tincidunt lobortis. Natoque penatibus et magnis dis parturient montes. Eros in cursus turpis massa tincidunt. Viverra aliquet eget sit amet tellus cras adipiscing enim. Nunc non blandit massa enim. Praesent elementum facilisis leo vel fringilla. Tellus integer feugiat scelerisque varius morbi. Pellentesque habitant morbi tristique senectus et. Etiam erat velit scelerisque in dictum. Amet porttitor eget dolor morbi non arcu. Aliquet bibendum enim facilisis gravida neque convallis a. Hendrerit gravida rutrum quisque non tellus orci ac auctor. Augue mauris augue neque gravida in fermentum et.
 					"
 					/>
-					<a href="#contact">
-						<Text text="_Stell hier deine Set!-Anfrage_" textColor="accent" />
-					</a>
 				</div>
 			</div>
 		</div>

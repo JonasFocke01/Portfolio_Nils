@@ -37,6 +37,7 @@
 	"type": "module",
 	"dependencies": {
 		"@jonas_focke/svelcon": "^0.4.3",
+		"svelte-inview": "^3.0.2",
 		"svelte-scrolling": "^1.2.2"
 	}
 }

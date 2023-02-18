@@ -4,7 +4,7 @@
 	import About from '$lib/about/+page.svelte';
 	import Gallery from '$lib/gallery/+page.svelte';
 	import { scrollRef } from 'svelte-scrolling';
-
+	
 	let scrollPosition = 0;
 </script>
 

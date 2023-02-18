@@ -16,10 +16,10 @@
 			<Lander />
 		</div>
 		<div use:scrollRef={'about'} class="bg-secondary z-10 opacity-95">
-			<About />
+			<Gallery />
 		</div>
 		<div use:scrollRef={'gallery'} class="bg-black z-10">
-			<Gallery />
+			<About />
 		</div>
 		<div use:scrollRef={'contact'} class="bg-secondary z-10">
 			<Contact />

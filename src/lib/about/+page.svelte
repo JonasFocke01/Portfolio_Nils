@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-	import { fly } from 'svelte/transition';
 	import Text from '@jonas_focke/svelcon/Wrapper/Text.svelte';
 	import { inview } from 'svelte-inview';
 
@@ -28,8 +27,8 @@
 	class="w-full text-center flex flex-row justify-center space-x-10 pt-5 mb-16"
 >
 	<div class="w-3/4 lg:w-1/2 text-text">
-		<div class="mt-2 flex flex-row">
-			<img class="mr-20 object-scale-down" src="/Portrait.jpg" alt="Mein Portrait" />
+		<div class="mt-2 flex 2xl:flex-row flex-col">
+			<img class="w-[30rem] object-scale-down" src="/Portrait.jpg" alt="Mein Portrait" />
 			<div class="mt-2 ml-4">
 				<div class="mt-2">
 					<Text

@@ -4,12 +4,21 @@
 	import About from '$lib/about/+page.svelte';
 	import Gallery from '$lib/gallery/+page.svelte';
 	import { scrollRef } from 'svelte-scrolling';
+	import SvelteSeo from 'svelte-seo';
 
 	let scrollPosition = 0;
 </script>
 
 <svelte:window bind:scrollY={scrollPosition} />
 
+<SvelteSeo
+	title="DJ Nils Focke"
+	description="Mein Name ist Nils Focke. Ich bin DJ und kenne mich in der House- und Hardstyle Szene aus."
+	keywords="dj, house, hardstyle, music, dancing, jumping"
+	base="www.nilsfocke.de"
+	themeColor="#26162D"
+	applicationName="DJ Nils Focke"
+/>
 <div class="w-full min-h-screen flex flex-row justify-center bg-black scroll-smooth">
 	<div class="w-screen flex flex-col">
 		<div class="bg-black z-0" style="transform: translateY({scrollPosition * 0.5}px)">

@@ -9,7 +9,7 @@
 			<Text text="*NILS FOCKE*" />
 		</div>
 		<div class="text-3xl w-full p-4">
-			<Text text="*Professioneller EDM DJ*" typewriterSpeed={0.3} />
+			<Text text="*Professioneller EDM DJ*" />
 		</div>
 		<div class="w-full mt-4 flex flex-col lg:flex-row lg:space-x-10 justify-center">
 			<div

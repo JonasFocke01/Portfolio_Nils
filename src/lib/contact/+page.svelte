@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Text from '@jonas_focke/svelcon/Wrapper/Text.svelte';
-	import MediaQuery from '@jonas_focke/svelcon/Wrapper/MediaQuery.svelte';
 	import Icon from '@iconify/svelte';
 
 	let booking: boolean;
@@ -57,7 +56,7 @@
 								<div class="ml-4">
 									<Text text="+49 173 123321" />
 									<div class="mt-1">
-										<Text text="info.nilsfocke.de" />
+										<Text text="info@nilsfocke.de" />
 									</div>
 								</div>
 							</div>

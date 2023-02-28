@@ -8,10 +8,10 @@
 	type Media = Array<Medium>;
 
 	const images: Media = [
-		{ path: '/gallery/picture_2.jpg', id: 'picture_2' },
+		{ path: '/gallery/lazer_in_your_face.jpg', id: 'lazer_in_your_face' },
 		{ path: '/gallery/picture_3.jpg', id: 'picture_3' },
 		{ path: '/gallery/picture_4.jpg', id: 'picture_4' },
-		{ path: '/gallery/picture_1.jpg', id: 'picture_1' }
+		{ path: '/gallery/close_up.jpg', id: 'close_up' }
 	];
 
 	const videos: Media = [

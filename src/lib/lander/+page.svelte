@@ -31,7 +31,7 @@
 
 <style>
 	.mainBackground {
-		background-image: url('/Lander.jpg');
+		background-image: url('/Title_Nils_Focke.jpg');
 		background-size: cover;
 		background-position: center;
 	}

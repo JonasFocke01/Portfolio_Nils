@@ -28,7 +28,11 @@
 >
 	<div class="w-3/4 lg:w-1/2 text-text">
 		<div class="mt-2 flex 2xl:flex-row flex-col">
-			<img class="w-[30rem] object-scale-down" src="/Portrait.jpg" alt="Mein Portrait" />
+			<img
+				class="w-[30rem] object-scale-down"
+				src="/Portrait_Nils_Focke.jpg"
+				alt="Portrait Nils Focke"
+			/>
 			<div class="mt-2 ml-4">
 				<div class="mt-2">
 					<Text

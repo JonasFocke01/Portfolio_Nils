@@ -13,18 +13,18 @@
 	</div>
 	<div class="mr-6 text-surface flex flex-row space-x-8 mt-3 h-16">
 		<a href="https://www.instagram.com/nilsfocke/" target="_blank" rel="noreferrer">
-			<Icon data={instagram} scale={4} />
+			<Icon class="hover:text-[#c13584] transition duration-150" data={instagram} scale={4} />
 		</a>
 		<a
 			href="https://www.facebook.com/profile.php?id=100090589291874"
 			target="_blank"
 			rel="noreferrer"
 		>
-			<Icon data={facebook} scale={4} />
+			<Icon class="hover:text-[#4267B2] transition duration-150" data={facebook} scale={4} />
 		</a>
 		<a href="https://www.tiktok.com/@nilsfocke" target="_blank" rel="noreferrer">
 			<svg
-				fill="#fef7ff"
+				class="fill-surface hover:fill-[#ff0050] transition duration-150"
 				width="60px"
 				height="60px"
 				viewBox="0 0 512 512"
@@ -41,7 +41,7 @@
 			rel="noreferrer"
 			class="mt-1"
 		>
-			<Icon data={soundcloud} scale={5} />
+			<Icon class="hover:text-[#F26F23] transition duration-150" data={soundcloud} scale={5} />
 		</a>
 		<a
 			href="https://www.youtube.com/channel/UC1uHkS5xC6arSac2EjK_Elg"
@@ -50,7 +50,7 @@
 			class="-mt-1"
 		>
 			<svg
-				fill="#fef7ff"
+				class="fill-surface hover:fill-[#FF0000] transition duration-150"
 				width="80px"
 				height="80px"
 				viewBox="0 0 24 24"

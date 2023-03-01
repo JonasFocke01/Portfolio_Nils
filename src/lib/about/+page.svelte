@@ -1,10 +1,5 @@
 <script lang="ts">
-	import Icon from '@iconify/svelte';
 	import Text from '@jonas_focke/svelcon/Wrapper/Text.svelte';
-	import { inview } from 'svelte-inview';
-
-	let isInView: boolean;
-	const options = {};
 </script>
 
 <div

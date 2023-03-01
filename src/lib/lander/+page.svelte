@@ -1,7 +1,5 @@
 <script lang="ts">
-	import Text from '@jonas_focke/svelcon/Wrapper/Text.svelte';
 	import MediaQuery from '@jonas_focke/svelcon/Wrapper/MediaQuery.svelte';
-	import { scrollTo } from 'svelte-scrolling';
 	import Icon from 'svelte-awesome';
 	import instagram from 'svelte-awesome/icons/instagram';
 	import facebook from 'svelte-awesome/icons/facebook';

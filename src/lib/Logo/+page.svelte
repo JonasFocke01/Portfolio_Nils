@@ -2,7 +2,6 @@
 	import { onMount } from 'svelte';
 	import { draw, fade, fly } from 'svelte/transition';
 	let mounted = true;
-	let hovering = false;
 	onMount(() => (mounted = true));
 </script>
 

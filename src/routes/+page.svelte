@@ -33,7 +33,7 @@
 		<div use:scrollRef={'about'} class="bg-black z-10 ">
 			<About />
 		</div>
-		<div use:scrollRef={'contact'} class="bg-secondary z-10">
+		<div use:scrollRef={'contact'} class="bg-gradient-to-r from-primary to-secondary z-10">
 			<Contact />
 		</div>
 	</div>

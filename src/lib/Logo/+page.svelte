@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { draw, fade, fly } from 'svelte/transition';
-	let mounted = false;
+	let mounted = true;
 	let hovering = false;
 	onMount(() => (mounted = true));
 </script>

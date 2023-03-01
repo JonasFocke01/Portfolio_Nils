@@ -9,6 +9,7 @@
 	let scrollPosition = 0;
 </script>
 
+<!-- <svelte:window bind:scrollY={scrollPosition} /> -->
 <!-- <SvelteSeo
 	title="DJ Nils Focke"
 	description="Mein Name ist Nils Focke. Ich bin DJ und kenne mich in der House- und Hardstyle Szene aus."
@@ -19,10 +20,14 @@
 /> -->
 <div class="w-full min-h-screen flex flex-row justify-center bg-black scroll-smooth">
 	<div class="w-screen flex flex-col">
-		<div class="bg-black z-0" style="transform: translateY({scrollPosition * 0.5}px)">
+		<div class="bg-black z-0">
 			<Lander />
 		</div>
-		<div use:scrollRef={'gallery'} class="bg-secondary z-10 opacity-95">
+		<div
+			use:scrollRef={'gallery'}
+			class="bg-gradient-to-r from-primary to-secondary z-20 rounded-3xl"
+		>
+			<!-- style="transform:translate(0px, {-scrollPosition + window.innerHeight}px)" -->
 			<Gallery />
 		</div>
 		<div use:scrollRef={'about'} class="bg-black z-10 ">

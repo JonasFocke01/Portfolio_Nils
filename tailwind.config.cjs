@@ -6,8 +6,8 @@ module.exports = {
 	],
 	theme: {
 		colors: {
-			primary: '#8945f9',
-			secondary: '#26162D',
+			primary: '#60133D',
+			secondary: '#4557FF',
 			accent: '#9d89b3',
 			success: '#4dea3f',
 			warning: '#f4bb50',
@@ -15,7 +15,7 @@ module.exports = {
 			info: '#62acfc',
 			surface: '#fef7ff',
 			text: '#D2D3F2',
-			black: '#070502'
+			black: '#000000'
 		},
 		extend: {}
 	},

@@ -5,7 +5,7 @@
 	let booking: boolean;
 </script>
 
-<div id="contact" class="w-full mb-36">
+<div id="contact" class="w-full mb-20">
 	<div class="w-full flex flex-row justify-center">
 		<div class="w-1/2 flex flex-col space-y-5">
 			<div class="mt-16 text-5xl flex flex-row justify-center">
@@ -24,9 +24,8 @@
 						</div>
 						<div class="flex flex-row justify-center">
 							<div class="mt-2">
-								<Text text="*Mein Standort*" />
 								<div class="mt-2">
-									<Text text="48143 Münster" />
+									<Text text="48308 Senden" />
 								</div>
 							</div>
 						</div>
@@ -45,7 +44,6 @@
 					</div>
 					<div class="flex flex-row justify-center">
 						<div class="mt-2 p-2">
-							<Text text="*So kannst du mich erreichen*" />
 							<div class="mt-2 flex flex-row">
 								<div>
 									<Text text="Phone:" />
@@ -54,7 +52,7 @@
 									</div>
 								</div>
 								<div class="ml-4">
-									<Text text="+49 173 123321" />
+									<Text text="+49 1525 6594780" />
 									<div class="mt-1">
 										<Text text="info@nilsfocke.de" />
 									</div>

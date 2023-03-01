@@ -34,9 +34,6 @@
 <svelte:window bind:innerWidth />
 
 <div class="flex flex-col w-full justify-center text-5xl">
-	<div class="pt-10 px-6 flex flex-row justify-center">
-		<Text text="*So sehen meine Auftritte aus*" />
-	</div>
 	<div class="mt-10 mb-10 flex flex-col">
 		<MediaQuery query="desktop">
 			<ImageCarousel medias={images} />

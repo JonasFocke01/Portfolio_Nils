@@ -11,7 +11,7 @@
 	<div class="w-[11rem] ml-6">
 		<Logo />
 	</div>
-	<div class="mr-6 text-surface flex flex-row space-x-8 mt-3">
+	<div class="mr-6 text-surface flex flex-row space-x-8 mt-3 h-16">
 		<a href="https://www.instagram.com/nilsfocke/" target="_blank" rel="noreferrer">
 			<Icon data={instagram} scale={4} />
 		</a>

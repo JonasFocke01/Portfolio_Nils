@@ -17,8 +17,8 @@
 				<div class="mt-2">
 					<Text
 						text="
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor aliquam nulla facilisi cras. Magna fermentum iaculis eu non. A diam sollicitudin tempor id eu. Ac orci phasellus egestas tellus rutrum tellus pellentesque. At in tellus integer feugiat scelerisque varius. Blandit aliquam etiam erat velit scelerisque. Convallis posuere morbi leo urna molestie at elementum eu. Ipsum nunc aliquet bibendum enim. Ornare massa eget egestas purus viverra accumsan in nisl. Aliquam faucibus purus in massa tempor nec feugiat nisl. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Eget nulla facilisi etiam dignissim diam quis. Tempor nec feugiat nisl pretium fusce. Id cursus metus aliquam eleifend. Dui vivamus arcu felis bibendum ut tristique.
-
+						Hi
+I am Nils Focke, DJ for clubs, bars, festivals, etc. I provide groovy house beats (bass house, tech house, big room) and full on hardstyle energy (rawstyle, hardcore, frenchcore) to your dancefloor. I am all about making people dance, have fun and go crazy. I am most comfortable on Pioneer equipment. You are interested or left with any questions? Feel free to call me or reach out to me via e!-mail!!
 					"
 					/>
 				</div>

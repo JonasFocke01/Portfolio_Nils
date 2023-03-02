@@ -6,10 +6,8 @@
 	type Media = Array<Medium>;
 
 	const images: Media = [
-		{ path: '/gallery/lazer_in_your_face.jpg', id: 'lazer_in_your_face' },
-		{ path: '/gallery/picture_3.jpg', id: 'picture_3' },
-		{ path: '/gallery/picture_4.jpg', id: 'picture_4' },
-		{ path: '/gallery/close_up.jpg', id: 'close_up' }
+		{ path: '/gallery/Title_Nils_Focke_Mobile.jpeg', id: 'Title_Nils_Focke_Mobile' },
+		{ path: '/gallery/Pointing.jpeg', id: 'Pointing' }
 	];
 
 	const openImage = (image: Medium) => {

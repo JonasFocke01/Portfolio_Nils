@@ -7,22 +7,25 @@
 	import Logo from '$lib/Logo/+page.svelte';
 </script>
 
-<div class="absolute w-full h-screen flex flex-row mt-6 justify-between">
-	<div class="w-[11rem] ml-6">
+<div class="absolute w-full flex flex-col sm:flex-row mt-6 justify-between pr-2">
+	<div class="w-[8rem] sm:ml-6 mb-2 ml-auto sm:w-[12rem]">
 		<Logo />
 	</div>
-	<div class="mr-6 text-surface flex flex-row space-x-8 mt-3 h-16">
-		<a href="https://www.instagram.com/nilsfocke/" target="_blank" rel="noreferrer">
+	<div
+		class="mr-6 ml-auto text-surface flex flex-col sm:flex-row sm:space-x-8 space-y-6 sm:space-y-0 mt-3 sm:h-16 h-full"
+	>
+		<a href="https://www.instagram.com/nilsfocke/" target="_blank" rel="noreferrer" class="mx-auto">
 			<Icon class="hover:text-[#c13584] transition duration-150" data={instagram} scale={4} />
 		</a>
 		<a
 			href="https://www.facebook.com/profile.php?id=100090589291874"
 			target="_blank"
 			rel="noreferrer"
+			class="mx-auto"
 		>
 			<Icon class="hover:text-[#4267B2] transition duration-150" data={facebook} scale={4} />
 		</a>
-		<a href="https://www.tiktok.com/@nilsfocke" target="_blank" rel="noreferrer">
+		<a href="https://www.tiktok.com/@nilsfocke" target="_blank" rel="noreferrer" class="mx-auto">
 			<svg
 				class="fill-surface hover:fill-[#ff0050] transition duration-150"
 				width="60px"
@@ -39,15 +42,15 @@
 			href="https://soundcloud.com/nils-focke/nils-focke-dj-mix-tech-house-01"
 			target="_blank"
 			rel="noreferrer"
-			class="mt-1"
+			class="mt-1 mx-auto"
 		>
 			<Icon class="hover:text-[#F26F23] transition duration-150" data={soundcloud} scale={5} />
 		</a>
 		<a
-			href="https://www.youtube.com/channel/UC1uHkS5xC6arSac2EjK_Elg"
+			href="https://www.youtube.com/channel/UC1uHkS5xC6arSac2EjK_Esm"
 			target="_blank"
 			rel="noreferrer"
-			class="-mt-1"
+			class="-mt-1  mx-auto"
 		>
 			<svg
 				class="fill-surface hover:fill-[#FF0000] transition duration-150"
@@ -63,23 +66,10 @@
 		</a>
 	</div>
 </div>
-<img class="h-screen object-cover" src="/Title_Nils_Focke.jpg" alt="Title Nils Focke" />
 
-<!-- <MediaQuery query="desktop">
-	<div class="w-full mt-4 flex flex-col lg:flex-row lg:space-x-10 justify-center">
-		<div
-			use:scrollTo={{ ref: 'contact', offset: -window.innerHeight * 0.8, duration: 1500 }}
-			class="mt-4 w-full text-2xl flex flex-row justify-center bg-secondary font-bold p-2 border rounded-md"
-		>
-			<Text text="*Kontakt*" />
-		</div>
-		<a
-			href="https://www.youtube.com/@nilsfocke"
-			target="_blank"
-			rel="noreferrer"
-			class="mt-4 w-full text-2xl flex flex-row justify-center bg-secondary font-bold p-2 border rounded-md"
-		>
-			<Text text="*Live DJ Mix*" />
-		</a>
-	</div>
-</MediaQuery> -->
+<MediaQuery query="desktop">
+	<img class="h-screen object-cover" src="/Title_Nils_Focke.jpg" alt="Title Nils Focke" />
+</MediaQuery>
+<MediaQuery query="tablet">
+	<img class="h-screen object-cover" src="/Title_Nils_Focke_Mobile.jpeg" alt="Title Nils Focke" />
+</MediaQuery>

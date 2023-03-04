@@ -1,28 +1,37 @@
 <script lang="ts">
+	import MediaQuery from '@jonas_focke/svelcon/Wrapper/MediaQuery.svelte';
+	import Contact from '$lib/contact/+page.svelte';
 	import Text from '@jonas_focke/svelcon/Wrapper/Text.svelte';
 </script>
 
 <div
-	id="audiosamples"
-	class="w-full text-center flex flex-row justify-center space-x-10 pt-5 mb-16"
+	class="mb-16 flex h-screen w-full flex-row justify-center space-x-10 px-[10vw] text-center text-text"
 >
-	<div class="w-3/4 lg:w-1/2 text-text">
-		<div class="mt-2 flex 2xl:flex-row flex-col">
+	<div class="flex h-full flex-col justify-end lg:flex-row-reverse lg:justify-center">
+		<div class="m-auto">
+			<Text
+				text="
+				Hi
+				I am Nils Focke, DJ for clubs, bars, festivals, etc. I provide groovy house beats (bass house, tech house, big room) and full on hardstyle energy (rawstyle, hardcore, frenchcore) to your dancefloor. I am all about making people dance, have fun and go crazy. I am most comfortable on Pioneer equipment. You are interested or left with any questions? Feel free to call me or reach out to me via e!-mail!!
+				"
+			/>
+			<!-- <MediaQuery query="desktop">
+				<div class="mt-4">
+					<Contact />
+				</div>
+			</MediaQuery> -->
+		</div>
+		<div class="flex h-[40vh] lg:m-auto lg:h-[80vh]">
 			<img
-				class="w-[30rem] object-scale-down"
+				class="object-scale-down lg:w-full"
 				src="/Portrait_Nils_Focke.jpg"
 				alt="Portrait Nils Focke"
 			/>
-			<div class="mt-2 ml-4">
-				<div class="mt-2">
-					<Text
-						text="
-						Hi
-I am Nils Focke, DJ for clubs, bars, festivals, etc. I provide groovy house beats (bass house, tech house, big room) and full on hardstyle energy (rawstyle, hardcore, frenchcore) to your dancefloor. I am all about making people dance, have fun and go crazy. I am most comfortable on Pioneer equipment. You are interested or left with any questions? Feel free to call me or reach out to me via e!-mail!!
-					"
-					/>
+			<!-- <MediaQuery query="mobile">
+				<div class="w-1/3">
+					<Contact />
 				</div>
-			</div>
+			</MediaQuery> -->
 		</div>
 	</div>
 </div>

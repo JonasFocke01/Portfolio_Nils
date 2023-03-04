@@ -3,25 +3,29 @@
 	import Contact from '$lib/contact/+page.svelte';
 	import About from '$lib/about/+page.svelte';
 	import Gallery from '$lib/gallery/+page.svelte';
-	import { scrollRef } from 'svelte-scrolling';
+
+	let loaded = false;
 </script>
 
-<div class="w-full min-h-screen flex flex-row justify-center bg-black scroll-smooth">
-	<div class="w-screen flex flex-col">
-		<div class="bg-black z-0">
-			<Lander />
+{#if !loaded}
+	<div class="h-screen w-full bg-black" />
+{/if}
+<div class="flex min-h-screen w-full flex-row justify-center scroll-smooth bg-black">
+	<div class="flex w-full flex-col">
+		<div class="scanner_animation absolute z-10 w-full bg-black">
+			<Lander on:loaded={() => (loaded = true)} />
 		</div>
-		<div
-			use:scrollRef={'gallery'}
-			class="bg-gradient-to-r from-primary to-secondary z-20 rounded-3xl"
-		>
+		<div class="z-20 mt-[100vh] mb-[100vh] rounded-3xl bg-gradient-to-r from-primary to-secondary">
 			<Gallery />
 		</div>
-		<div use:scrollRef={'about'} class="bg-black z-10 ">
+		<div class="fixed z-0 bg-black">
 			<About />
-		</div>
-		<div use:scrollRef={'contact'} class="bg-gradient-to-r from-primary to-secondary z-10">
-			<Contact />
 		</div>
 	</div>
 </div>
+
+<style>
+	.scanner_animation {
+		clip: rect(0px, 100vw, 100vh, 0px);
+	}
+</style>

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { draw, fade, fly } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
+	
 	let mounted = true;
 	onMount(() => (mounted = true));
 </script>

@@ -1,6 +1,4 @@
 <script lang="ts">
-	import MediaQuery from '@jonas_focke/svelcon/Wrapper/MediaQuery.svelte';
-	import Contact from '$lib/contact/+page.svelte';
 	import Text from '@jonas_focke/svelcon/Wrapper/Text.svelte';
 </script>
 
@@ -15,11 +13,6 @@
 				I am Nils Focke, DJ for clubs, bars, festivals, etc. I provide groovy house beats (bass house, tech house, big room) and full on hardstyle energy (rawstyle, hardcore, frenchcore) to your dancefloor. I am all about making people dance, have fun and go crazy. I am most comfortable on Pioneer equipment. You are interested or left with any questions? Feel free to call me or reach out to me via e!-mail!!
 				"
 			/>
-			<!-- <MediaQuery query="desktop">
-				<div class="mt-4">
-					<Contact />
-				</div>
-			</MediaQuery> -->
 		</div>
 		<div class="flex h-[40vh] lg:m-auto lg:h-[80vh]">
 			<img
@@ -27,11 +20,6 @@
 				src="/Portrait_Nils_Focke.jpg"
 				alt="Portrait Nils Focke"
 			/>
-			<!-- <MediaQuery query="mobile">
-				<div class="w-1/3">
-					<Contact />
-				</div>
-			</MediaQuery> -->
 		</div>
 	</div>
 </div>

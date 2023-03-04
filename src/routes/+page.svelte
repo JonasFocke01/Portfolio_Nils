@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Lander from '$lib/lander/+page.svelte';
-	import Contact from '$lib/contact/+page.svelte';
 	import About from '$lib/about/+page.svelte';
 	import Gallery from '$lib/gallery/+page.svelte';
 

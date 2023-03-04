@@ -3,7 +3,6 @@
 	import Logo from '$lib/Logo/+page.svelte';
 	import Icononify from '@iconify/svelte';
 	import { toast } from '@zerodevx/svelte-toast';
-
 	import { createEventDispatcher, onMount } from 'svelte';
 
 	const dispatch = createEventDispatcher();
@@ -75,7 +74,7 @@
 				/>
 			</a>
 			<a
-				href="https://www.youtube.com/channel/UC1uHkS5xC6arSac2EjK_Esm"
+				href="https://www.youtube.com/@nilsfocke"
 				target="_blank"
 				rel="noreferrer"
 				class="mx-auto mt-1"
@@ -123,7 +122,7 @@
 			</button>
 			<a
 				class="underline"
-				href="https://goo.gl/maps/79QRMUPwPN5gsfxo6"
+				href="https://maps.app.goo.gl/ySCEPVXKcWevf4Fh7"
 				target="_blank"
 				rel="noreferrer"
 			>

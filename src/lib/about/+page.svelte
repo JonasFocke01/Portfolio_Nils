@@ -17,7 +17,7 @@
 		<div class="flex h-[40vh] lg:m-auto lg:h-[80vh]">
 			<img
 				class="object-scale-down lg:w-full"
-				src="/Portrait_Nils_Focke.png"
+				src="/Portrait_Nils_Focke.avif"
 				alt="Portrait Nils Focke"
 			/>
 		</div>

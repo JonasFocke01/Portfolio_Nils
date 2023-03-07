@@ -7,13 +7,13 @@
 
 	onMount(() => {
 		images = [
-			{ path: '/gallery/lazer_in_your_face.jpg', id: 'lazer_in_your_face' },
-			{ path: '/gallery/Pointing.jpeg', id: 'Pointing' },
+			{ path: '/gallery/lazer_in_your_face.png', id: 'lazer_in_your_face' },
+			{ path: '/gallery/Pointing.png', id: 'Pointing' },
 			{
-				path: '/gallery/close_up.jpg',
+				path: '/gallery/close_up.png',
 				id: 'close_up'
 			},
-			{ path: '/Title_Nils_Focke_Mobile.jpg', id: 'Title_Nils_Focke_Mobile.jpg' }
+			{ path: '/Title_Nils_Focke_Mobile.png', id: 'Title_Nils_Focke_Mobile.png' }
 		];
 	});
 </script>

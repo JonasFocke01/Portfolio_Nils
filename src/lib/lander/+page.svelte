@@ -140,7 +140,7 @@
 		<img
 			on:load={() => setTimeout(() => dispatch('loaded'), 100)}
 			class="block h-screen w-full bg-black object-cover"
-			src="/Title_Nils_Focke.jpg"
+			src="/Title_Nils_Focke.png"
 			alt="Title Nils Focke"
 		/>
 	</MediaQuery>
@@ -148,7 +148,7 @@
 		<img
 			on:load={() => setTimeout(() => dispatch('loaded'), 100)}
 			class="block h-screen w-full bg-black object-cover"
-			src="/Title_Nils_Focke_Mobile.jpg"
+			src="/Title_Nils_Focke_Mobile.png"
 			alt="Title Nils Focke"
 		/>
 	</MediaQuery>

@@ -3,7 +3,7 @@
 	import About from '$lib/about/+page.svelte';
 	import Gallery from '$lib/gallery/+page.svelte';
 
-	let loaded = false;
+	let loaded = true;
 </script>
 
 {#if !loaded}
